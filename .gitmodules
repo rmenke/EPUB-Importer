@@ -1,0 +1,3 @@
+[submodule "EPUB Importer Tests/epub3-samples"]
+	path = EPUB Importer Tests/epub3-samples
+	url = https://github.com/IDPF/epub3-samples.git

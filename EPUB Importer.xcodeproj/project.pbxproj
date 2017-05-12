@@ -1,0 +1,430 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E103C6851EC7C9D400601705 /* GetMetadataForFile.m in Sources */ = {isa = PBXBuildFile; fileRef = E144DA7D1EC65ED800D4AEEB /* GetMetadataForFile.m */; };
+		E121EFD21EC66E32000F5549 /* EPUBImporterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E121EFD11EC66E32000F5549 /* EPUBImporterTests.m */; };
+		E121EFD71EC66E50000F5549 /* SpotlightImporter.m in Sources */ = {isa = PBXBuildFile; fileRef = E144DA801EC65ED900D4AEEB /* SpotlightImporter.m */; };
+		E144DA7C1EC65ED800D4AEEB /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = E144DA7B1EC65ED800D4AEEB /* main.c */; };
+		E144DA7E1EC65ED800D4AEEB /* GetMetadataForFile.m in Sources */ = {isa = PBXBuildFile; fileRef = E144DA7D1EC65ED800D4AEEB /* GetMetadataForFile.m */; };
+		E144DA811EC65ED900D4AEEB /* SpotlightImporter.m in Sources */ = {isa = PBXBuildFile; fileRef = E144DA801EC65ED900D4AEEB /* SpotlightImporter.m */; };
+		E1AF08441EC7EB990001B12A /* schema.xml in Resources */ = {isa = PBXBuildFile; fileRef = E1AF08431EC7EB990001B12A /* schema.xml */; };
+		E1AF084C1EC7ED980001B12A /* schema.strings in Resources */ = {isa = PBXBuildFile; fileRef = E1AF084A1EC7ED980001B12A /* schema.strings */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		E121EFCF1EC66E31000F5549 /* EPUB Importer Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "EPUB Importer Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E121EFD11EC66E32000F5549 /* EPUBImporterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EPUBImporterTests.m; sourceTree = "<group>"; };
+		E121EFD31EC66E33000F5549 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E144DA771EC65ED800D4AEEB /* EPUB Importer.mdimporter */ = {isa = PBXFileReference; explicitFileType = "wrapper.spotlight-importer"; includeInIndex = 0; path = "EPUB Importer.mdimporter"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E144DA7B1EC65ED800D4AEEB /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		E144DA7D1EC65ED800D4AEEB /* GetMetadataForFile.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GetMetadataForFile.m; sourceTree = "<group>"; };
+		E144DA7F1EC65ED800D4AEEB /* SpotlightImporter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpotlightImporter.h; sourceTree = "<group>"; };
+		E144DA801EC65ED900D4AEEB /* SpotlightImporter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpotlightImporter.m; sourceTree = "<group>"; };
+		E144DA831EC65ED900D4AEEB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E1AF08431EC7EB990001B12A /* schema.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = schema.xml; sourceTree = "<group>"; };
+		E1AF084B1EC7ED980001B12A /* English */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/schema.strings; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E121EFCC1EC66E30000F5549 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E144DA741EC65ED700D4AEEB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E121EFD01EC66E32000F5549 /* EPUB Importer Tests */ = {
+			isa = PBXGroup;
+			children = (
+				E121EFD11EC66E32000F5549 /* EPUBImporterTests.m */,
+				E121EFD31EC66E33000F5549 /* Info.plist */,
+			);
+			path = "EPUB Importer Tests";
+			sourceTree = "<group>";
+		};
+		E144DA6E1EC65ED700D4AEEB = {
+			isa = PBXGroup;
+			children = (
+				E144DA791EC65ED800D4AEEB /* EPUB Importer */,
+				E121EFD01EC66E32000F5549 /* EPUB Importer Tests */,
+				E144DA781EC65ED800D4AEEB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E144DA781EC65ED800D4AEEB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E144DA771EC65ED800D4AEEB /* EPUB Importer.mdimporter */,
+				E121EFCF1EC66E31000F5549 /* EPUB Importer Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E144DA791EC65ED800D4AEEB /* EPUB Importer */ = {
+			isa = PBXGroup;
+			children = (
+				E144DA7D1EC65ED800D4AEEB /* GetMetadataForFile.m */,
+				E144DA7F1EC65ED800D4AEEB /* SpotlightImporter.h */,
+				E144DA801EC65ED900D4AEEB /* SpotlightImporter.m */,
+				E144DA831EC65ED900D4AEEB /* Info.plist */,
+				E1AF08431EC7EB990001B12A /* schema.xml */,
+				E1AF084A1EC7ED980001B12A /* schema.strings */,
+				E144DA7A1EC65ED800D4AEEB /* Supporting Files */,
+			);
+			path = "EPUB Importer";
+			sourceTree = "<group>";
+		};
+		E144DA7A1EC65ED800D4AEEB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E144DA7B1EC65ED800D4AEEB /* main.c */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E121EFCE1EC66E30000F5549 /* EPUB Importer Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E121EFD61EC66E35000F5549 /* Build configuration list for PBXNativeTarget "EPUB Importer Tests" */;
+			buildPhases = (
+				E121EFCB1EC66E30000F5549 /* Sources */,
+				E121EFCC1EC66E30000F5549 /* Frameworks */,
+				E1D0F73C1EC6B5E90050E798 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "EPUB Importer Tests";
+			productName = "EPUB Importer Tests";
+			productReference = E121EFCF1EC66E31000F5549 /* EPUB Importer Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E144DA761EC65ED700D4AEEB /* EPUB Importer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E144DA861EC65ED900D4AEEB /* Build configuration list for PBXNativeTarget "EPUB Importer" */;
+			buildPhases = (
+				E144DA731EC65ED700D4AEEB /* Sources */,
+				E144DA741EC65ED700D4AEEB /* Frameworks */,
+				E144DA751EC65ED700D4AEEB /* Resources */,
+				E1D0F73E1EC6C9E80050E798 /* Reimport Files */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "EPUB Importer";
+			productName = "EPUB Importer";
+			productReference = E144DA771EC65ED800D4AEEB /* EPUB Importer.mdimporter */;
+			productType = "com.apple.product-type.spotlight-importer";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E144DA6F1EC65ED700D4AEEB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Rob Menke";
+				TargetAttributes = {
+					E121EFCE1EC66E30000F5549 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+					E144DA761EC65ED700D4AEEB = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = E144DA721EC65ED700D4AEEB /* Build configuration list for PBXProject "EPUB Importer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				English,
+			);
+			mainGroup = E144DA6E1EC65ED700D4AEEB;
+			productRefGroup = E144DA781EC65ED800D4AEEB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E144DA761EC65ED700D4AEEB /* EPUB Importer */,
+				E121EFCE1EC66E30000F5549 /* EPUB Importer Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E144DA751EC65ED700D4AEEB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1AF08441EC7EB990001B12A /* schema.xml in Resources */,
+				E1AF084C1EC7ED980001B12A /* schema.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		E1D0F73C1EC6B5E90050E798 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/EPUB Importer Tests/epub3-samples/30/moby-dick",
+				"$(SRCROOT)/EPUB Importer Tests/epub3-samples/30/childrens-media-query",
+			);
+			outputPaths = (
+				"$(TARGET_BUILD_DIR)/$(UNLOCALIZED_RESOURCES_FOLDER_PATH)/moby-dick.epub",
+				"$(TARGET_BUILD_DIR)/$(UNLOCALIZED_RESOURCES_FOLDER_PATH)/childrens.epub",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/bash;
+			shellScript = "mkdir -p \"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}\"\n\nfor (( I=0; I<${SCRIPT_INPUT_FILE_COUNT}; ++I )); do\n    IN=\"SCRIPT_INPUT_FILE_$I\" OUT=\"SCRIPT_OUTPUT_FILE_$I\"\n    if [[ -d \"${!IN}\" && -n \"${!OUT}\" ]]; then\n        (cd \"${!IN}\"; find . -print0 -depth | cpio -pld0 \"${!OUT}\" 2>/dev/null)\n    fi\ndone";
+			showEnvVarsInLog = 0;
+		};
+		E1D0F73E1EC6C9E80050E798 /* Reimport Files */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 8;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Reimport Files";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+			shellPath = /bin/sh;
+			shellScript = "/usr/bin/mdimport -r \"${INSTALL_DIR}/${FULL_PRODUCT_NAME}\"";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E121EFCB1EC66E30000F5549 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E103C6851EC7C9D400601705 /* GetMetadataForFile.m in Sources */,
+				E121EFD71EC66E50000F5549 /* SpotlightImporter.m in Sources */,
+				E121EFD21EC66E32000F5549 /* EPUBImporterTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E144DA731EC65ED700D4AEEB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E144DA811EC65ED900D4AEEB /* SpotlightImporter.m in Sources */,
+				E144DA7C1EC65ED800D4AEEB /* main.c in Sources */,
+				E144DA7E1EC65ED800D4AEEB /* GetMetadataForFile.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E1AF084A1EC7ED980001B12A /* schema.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E1AF084B1EC7ED980001B12A /* English */,
+			);
+			name = schema.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E121EFD41EC66E34000F5549 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "EPUB Importer Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.the-wabe.EPUB-Importer-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		E121EFD51EC66E34000F5549 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "EPUB Importer Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.the-wabe.EPUB-Importer-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		E144DA841EC65ED900D4AEEB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		E144DA851EC65ED900D4AEEB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		E144DA871EC65ED900D4AEEB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "EPUB Importer/Info.plist";
+				INSTALL_PATH = "$(HOME)/Library/Spotlight";
+				LIBRARY_STYLE = BUNDLE;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.the-wabe.EPUB-Importer";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = mdimporter;
+			};
+			name = Debug;
+		};
+		E144DA881EC65ED900D4AEEB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "EPUB Importer/Info.plist";
+				INSTALL_PATH = "$(HOME)/Library/Spotlight";
+				LIBRARY_STYLE = BUNDLE;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.the-wabe.EPUB-Importer";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = mdimporter;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E121EFD61EC66E35000F5549 /* Build configuration list for PBXNativeTarget "EPUB Importer Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E121EFD41EC66E34000F5549 /* Debug */,
+				E121EFD51EC66E34000F5549 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E144DA721EC65ED700D4AEEB /* Build configuration list for PBXProject "EPUB Importer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E144DA841EC65ED900D4AEEB /* Debug */,
+				E144DA851EC65ED900D4AEEB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E144DA861EC65ED900D4AEEB /* Build configuration list for PBXNativeTarget "EPUB Importer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E144DA871EC65ED900D4AEEB /* Debug */,
+				E144DA881EC65ED900D4AEEB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E144DA6F1EC65ED700D4AEEB /* Project object */;
+}
