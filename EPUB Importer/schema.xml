@@ -32,5 +32,30 @@
                 kMDItemRights
             </displayattrs>
         </type>
+        <type name="org.idpf.epub-container">
+            <note>
+                The keys that this metadata importer handles.
+            </note>
+            <allattrs>
+                kMDItemAuthors
+                kMDItemContentCreationDate
+                kMDItemContentModificationDate
+                kMDItemContributors
+                kMDItemIdentifier
+                kMDItemLanguages
+                kMDItemPublishers
+                kMDItemRights
+                kMDItemTextContent
+                kMDItemTitle
+                org_idpf_epub_manifest_count
+                org_idpf_epub_spine_count
+            </allattrs>
+            <displayattrs>
+                kMDItemTitle
+                kMDItemAuthors
+                kMDItemContentModificationDate
+                kMDItemRights
+            </displayattrs>
+        </type>
     </types>
 </schema>

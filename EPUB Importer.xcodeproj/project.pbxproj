@@ -13,6 +13,12 @@
 		E144DA7C1EC65ED800D4AEEB /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = E144DA7B1EC65ED800D4AEEB /* main.c */; };
 		E144DA7E1EC65ED800D4AEEB /* GetMetadataForFile.m in Sources */ = {isa = PBXBuildFile; fileRef = E144DA7D1EC65ED800D4AEEB /* GetMetadataForFile.m */; };
 		E144DA811EC65ED900D4AEEB /* SpotlightImporter.m in Sources */ = {isa = PBXBuildFile; fileRef = E144DA801EC65ED900D4AEEB /* SpotlightImporter.m */; };
+		E18131E91ECB93A7002595EB /* FolderDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = E18131E81ECB93A7002595EB /* FolderDataSource.m */; };
+		E18131EA1ECB9A24002595EB /* FolderDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = E18131E81ECB93A7002595EB /* FolderDataSource.m */; };
+		E18131ED1ECB9FF0002595EB /* ArchiveDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = E18131EC1ECB9FF0002595EB /* ArchiveDataSource.m */; };
+		E18131EE1ECBA47E002595EB /* ArchiveDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = E18131EC1ECB9FF0002595EB /* ArchiveDataSource.m */; };
+		E18131F11ECBDBF4002595EB /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = E18131F01ECBDBF4002595EB /* libz.tbd */; };
+		E18131F21ECBF91D002595EB /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = E18131F01ECBDBF4002595EB /* libz.tbd */; };
 		E1AF08441EC7EB990001B12A /* schema.xml in Resources */ = {isa = PBXBuildFile; fileRef = E1AF08431EC7EB990001B12A /* schema.xml */; };
 		E1AF084C1EC7ED980001B12A /* schema.strings in Resources */ = {isa = PBXBuildFile; fileRef = E1AF084A1EC7ED980001B12A /* schema.strings */; };
 /* End PBXBuildFile section */
@@ -27,6 +33,12 @@
 		E144DA7F1EC65ED800D4AEEB /* SpotlightImporter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpotlightImporter.h; sourceTree = "<group>"; };
 		E144DA801EC65ED900D4AEEB /* SpotlightImporter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpotlightImporter.m; sourceTree = "<group>"; };
 		E144DA831EC65ED900D4AEEB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E18131E61ECB9332002595EB /* DataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataSource.h; sourceTree = "<group>"; };
+		E18131E71ECB93A7002595EB /* FolderDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FolderDataSource.h; sourceTree = "<group>"; };
+		E18131E81ECB93A7002595EB /* FolderDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FolderDataSource.m; sourceTree = "<group>"; };
+		E18131EB1ECB9FF0002595EB /* ArchiveDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArchiveDataSource.h; sourceTree = "<group>"; };
+		E18131EC1ECB9FF0002595EB /* ArchiveDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArchiveDataSource.m; sourceTree = "<group>"; };
+		E18131F01ECBDBF4002595EB /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		E1AF08431EC7EB990001B12A /* schema.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = schema.xml; sourceTree = "<group>"; };
 		E1AF084B1EC7ED980001B12A /* English */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/schema.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -36,6 +48,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E18131F11ECBDBF4002595EB /* libz.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -43,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E18131F21ECBF91D002595EB /* libz.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +77,7 @@
 			children = (
 				E144DA791EC65ED800D4AEEB /* EPUB Importer */,
 				E121EFD01EC66E32000F5549 /* EPUB Importer Tests */,
+				E18131EF1ECBDBF3002595EB /* Frameworks */,
 				E144DA781EC65ED800D4AEEB /* Products */,
 			);
 			sourceTree = "<group>";
@@ -82,6 +97,11 @@
 				E144DA7D1EC65ED800D4AEEB /* GetMetadataForFile.m */,
 				E144DA7F1EC65ED800D4AEEB /* SpotlightImporter.h */,
 				E144DA801EC65ED900D4AEEB /* SpotlightImporter.m */,
+				E18131E61ECB9332002595EB /* DataSource.h */,
+				E18131E71ECB93A7002595EB /* FolderDataSource.h */,
+				E18131E81ECB93A7002595EB /* FolderDataSource.m */,
+				E18131EB1ECB9FF0002595EB /* ArchiveDataSource.h */,
+				E18131EC1ECB9FF0002595EB /* ArchiveDataSource.m */,
 				E144DA831EC65ED900D4AEEB /* Info.plist */,
 				E1AF08431EC7EB990001B12A /* schema.xml */,
 				E1AF084A1EC7ED980001B12A /* schema.strings */,
@@ -98,6 +118,14 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		E18131EF1ECBDBF3002595EB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E18131F01ECBDBF4002595EB /* libz.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -107,7 +135,8 @@
 			buildPhases = (
 				E121EFCB1EC66E30000F5549 /* Sources */,
 				E121EFCC1EC66E30000F5549 /* Frameworks */,
-				E1D0F73C1EC6B5E90050E798 /* ShellScript */,
+				E1D0F73C1EC6B5E90050E798 /* Copy ePub Folders */,
+				E18131E41ECB79D3002595EB /* Make ePub Container */,
 			);
 			buildRules = (
 			);
@@ -187,7 +216,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		E1D0F73C1EC6B5E90050E798 /* ShellScript */ = {
+		E18131E41ECB79D3002595EB /* Make ePub Container */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/EPUB Importer Tests/epub3-samples/30/wasteland",
+			);
+			name = "Make ePub Container";
+			outputPaths = (
+				"$(TARGET_BUILD_DIR)/$(UNLOCALIZED_RESOURCES_FOLDER_PATH)/wasteland.epub",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "cd \"${SRCROOT}/EPUB Importer Tests/epub3-samples\"\n\nfor (( I=0; I<${SCRIPT_INPUT_FILE_COUNT}; ++I )); do\n    IN=\"SCRIPT_INPUT_FILE_$I\" OUT=\"SCRIPT_OUTPUT_FILE_$I\"\n    sh pack-single.sh \"${!IN#${SRCROOT}/EPUB Importer Tests/epub3-samples/}\" >/dev/null 2>&1\n    mv \"${!IN##*/}.epub\" \"${!OUT}\"\ndone";
+			showEnvVarsInLog = 0;
+		};
+		E1D0F73C1EC6B5E90050E798 /* Copy ePub Folders */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -196,6 +242,7 @@
 				"$(SRCROOT)/EPUB Importer Tests/epub3-samples/30/moby-dick",
 				"$(SRCROOT)/EPUB Importer Tests/epub3-samples/30/childrens-media-query",
 			);
+			name = "Copy ePub Folders";
 			outputPaths = (
 				"$(TARGET_BUILD_DIR)/$(UNLOCALIZED_RESOURCES_FOLDER_PATH)/moby-dick.epub",
 				"$(TARGET_BUILD_DIR)/$(UNLOCALIZED_RESOURCES_FOLDER_PATH)/childrens.epub",
@@ -227,9 +274,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E18131EA1ECB9A24002595EB /* FolderDataSource.m in Sources */,
 				E103C6851EC7C9D400601705 /* GetMetadataForFile.m in Sources */,
 				E121EFD71EC66E50000F5549 /* SpotlightImporter.m in Sources */,
 				E121EFD21EC66E32000F5549 /* EPUBImporterTests.m in Sources */,
+				E18131EE1ECBA47E002595EB /* ArchiveDataSource.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -237,9 +286,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E18131E91ECB93A7002595EB /* FolderDataSource.m in Sources */,
 				E144DA811EC65ED900D4AEEB /* SpotlightImporter.m in Sources */,
 				E144DA7C1EC65ED800D4AEEB /* main.c in Sources */,
 				E144DA7E1EC65ED800D4AEEB /* GetMetadataForFile.m in Sources */,
+				E18131ED1ECB9FF0002595EB /* ArchiveDataSource.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

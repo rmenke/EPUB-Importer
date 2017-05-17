@@ -51,8 +51,10 @@ extern Boolean GetMetadataForFile(void *thisInterface, CFMutableDictionaryRef at
 
 - (void)testImporterSamples {
     for (NSURL *url in [_bundle URLsForResourcesWithExtension:@"epub" subdirectory:nil]) {
+        NSDictionary<NSURLResourceKey,id> *resources = [url resourceValuesForKeys:@[NSURLFileResourceTypeKey, NSURLTypeIdentifierKey] error:NULL];
+
         CFMutableDictionaryRef attributes = CFDictionaryCreateMutable(kCFAllocatorDefault, 0, &kCFTypeDictionaryKeyCallBacks, &kCFTypeDictionaryValueCallBacks);
-        XCTAssertTrue(GetMetadataForFile(NULL, attributes, CFSTR("org.idpf.epub-folder"), (__bridge CFStringRef)(url.path)));
+        XCTAssertTrue(GetMetadataForFile(NULL, attributes, (__bridge CFStringRef)(resources[NSURLTypeIdentifierKey]), (__bridge CFStringRef)(url.path)));
 
         CFTypeRef value;
 
